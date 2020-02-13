@@ -12,9 +12,11 @@ app.use(methodOverride('_method'));
 app.get('/', (req, res) => {
     // res.send('HOME');
     res.render('home');
-})
+});
 
+// mount dinos.js and cryptids.js
 app.use('/dinos', require('./routes/dinos'));
+app.use('/cryptids', require('./routes/cryptids'));
 
 app.listen(3000, () => {
     console.log('🎻 You are listening to port 3000 🎻');
