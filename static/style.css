@@ -1,0 +1,50 @@
+body {
+    background: rgb(13, 99, 13);
+    color: rgb(230, 230, 132);
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background: rgb(8, 68, 8);
+    text-align: center;
+}
+nav {
+    background: black;
+    padding: 10px;
+}
+nav li {
+    display: inline;
+    margin: 10px;
+    text-decoration: none;
+}
+a {
+    color: rgb(230, 230, 132);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 166, 0);
+}
+ul {
+    line-height: 20px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px dotted  rgb(255, 166, 0);
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

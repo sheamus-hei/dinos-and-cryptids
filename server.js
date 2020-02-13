@@ -8,6 +8,7 @@ app.set('view engine', 'ejs');
 app.use(layouts);
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
+app.use(express.static('static'));
 
 app.get('/', (req, res) => {
     // res.send('HOME');

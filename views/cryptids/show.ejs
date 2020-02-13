@@ -1,4 +1,7 @@
 <h2>Here's <%= cryptid.name %></h2>
 <h4><%= cryptid.name %> is a great cryptid</h4>
-<img src="<%= cryptid.img_url %>">
+<div class="tooltip">
+    <img src="<%= cryptid.img_url %>">
+    <span class="tooltiptext"><%= cryptid.name %></span>
+</div>
 <a href="/cryptids/edit/<%= cryptid.id %>">Edit <%= cryptid.name %></a>
